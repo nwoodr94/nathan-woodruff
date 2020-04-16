@@ -3,14 +3,19 @@ import "./About.css";
 
 export class About extends React.Component {
     render() {
-        return aboutJSX;
+        return (
+          <section class="text">
+            {aboutJSX}
+            {machineJSX}
+            {lifestyleJSX}
+          </section>
+        );
     }
 }
 
 const aboutJSX = (
-    <section class="text">
-    <h2>About Me</h2>
     <div>
+      <h2>About Me</h2>
       <p>
         I'm native to the Pacific Northwest, and I graduated from the University of Washington with a B.S. in Applied
         Physics in 2017.
@@ -19,6 +24,11 @@ const aboutJSX = (
         In the summer of 2019 I completed a full-stack software development bootcamp, and due to my interest in building web applications, I started work as a software developer on a React team in Los Angeles.
       </p>
       <br />
+    </div>
+);
+
+const machineJSX = (
+    <div>
       <h2>Machine Preferences</h2>
       <p>
         I'm developing in Crostini on a Pixelbook Go, with the i5/8/128 gig configuration. I like the Chrome OS
@@ -29,7 +39,11 @@ const aboutJSX = (
         While Google is my provider of choice for hardware and OS solutions, I stick with AWS for cloud-based
         development work.
       </p>
-      <br />
+    </div>
+);
+
+const lifestyleJSX = (
+    <div>
       <h2>Lifestyle</h2>
       <p>
         Right now I'm hitting the basics. I train with a crossfit gym, and run a 5K when I get home from work. I invest in the stock market, and meal prep once or twice every week.
@@ -44,6 +58,4 @@ const aboutJSX = (
         <img src={require("../../assets/space-daemon.png")} alt="rocket"/>
       </div>
     </div>
-
-  </section>
-)
+);
