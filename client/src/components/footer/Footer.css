@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    font-weight: 100px;
+    padding: 1rem 0;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.7rem;
+    font-family: 'Roboto', sans-serif;
+    animation: animation 500ms linear both;
+  }
