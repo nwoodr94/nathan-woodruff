@@ -29,7 +29,7 @@ const aboutJSX = (
 
 const machineJSX = (
     <div>
-      <h2>Machine Preferences</h2>
+      <h2>Software Development</h2>
       <p>
         I'm developing in Crostini on a Pixelbook Go, with the i5/8/128 gig configuration. I like the Chrome OS
         philosophy, and when it's time to code, I fire up the terminal and work directly in the provisioned Debian

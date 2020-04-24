@@ -1,5 +1,6 @@
 import React from 'react';
 import './Form.css';
+import Contact from './Model';
 
 export class Form extends React.Component {
 
@@ -9,16 +10,30 @@ export class Form extends React.Component {
             name: '',
             company: '',
             email: '',
-            message: ''
+            message: '',
+            length: 0,
+            showCount: false
         };
         this.handleChange = this.handleChange.bind(this);
+        this.countLetters = this.countLetters.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    length = 0
+
     // For each state object key, assign it the corresponding target value
     handleChange(e) {
+        console.log({[e.target.name]: e.target.value});
         this.setState({
             [e.target.name]: e.target.value
+        });
+    }
+
+    countLetters(e) {
+        let input = e.target.value
+        this.setState({
+            length: input.length,
+            showCount: true
         });
     }
 
@@ -32,7 +47,8 @@ export class Form extends React.Component {
         contact.email = this.state.email;
         contact.message = this.state.message;
     
-        this.props.onSubmit(contact);
+        console.log(`${JSON.stringify(contact)}`)
+        //this.props.onSubmit(contact);
     }
 
 
@@ -42,21 +58,18 @@ export class Form extends React.Component {
             <h2>Contact</h2>
             <br /> 
             <form onSubmit={this.handleSubmit}>
-                <input type="text" name="name" placeholder="Name" onChange={this.handleChange} />
-                <input type="text" name="company" placeholder="Company" onChange={this.handleChange} />
-                <input type="email" name="email" placeholder="Email Address" onChange={this.handleChange} />
-                <textarea rows="12" name="message" placeholder="Message" onChange={this.handleChange} ></textarea>
+                <input type="text" name="name" placeholder="Name" maxLength="100" autocomplete="off" onChange={this.handleChange} />
+                <input type="text" name="company" placeholder="Company" maxLength="100" autocomplete="off" onChange={this.handleChange} />
+                <input type="email" name="email" placeholder="Email Address" maxLength="100" autocomplete="off" onChange={this.handleChange} />
+                <textarea rows="12" name="message" placeholder="Message" maxLength="500" autocomplete="off" onChange={this.handleChange} onChange={this.countLetters}></textarea>
             </form>
-            <br />
-            <button type="submit" onClick={this.handleSubmit}>Submit</button>
+            <p style={{"fontSize": "small"}}>
+                {(this.state.length > 0) && `${this.state.length}/500`}
+                <br />
+                <br />
+                <button type="submit" onClick={this.handleSubmit}>Submit</button>
+            </p>
         </section>
         );
     }
-}
-
-class Contact {
-    name
-    company
-    email
-    message
 }
