@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import {Home} from "../home/Home";
 import {About} from "../about/About";
-import {FormContainer} from "../contact/FormContainer";
+import {Contact} from "../contact/Contact";
 import './Nav.css';
 
 export class Nav extends React.Component {
@@ -16,7 +16,7 @@ export class Nav extends React.Component {
                 <Switch>
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/about" component={About}></Route>
-                    <Route path="/contact" component={FormContainer}></Route>
+                    <Route path="/contact" component={Contact}></Route>
                 </Switch>
             </Router>
         )
