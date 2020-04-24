@@ -2,7 +2,6 @@
 
 import sqlite3
 import flask
-import jsonpickle
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime
@@ -23,13 +22,6 @@ class Contact:
         self.company = company
         self.email = email
         self.message = message
-
-
-# time = now.strftime("%m/%d/%Y %H:%M:%S")
-# name = "Nathan"
-# company = "Edison"
-# email = "nwoodr94@gmail.com"
-# message = "Hello World"
 
 # SQLite
 @app.route('/webapi/v1/contact/', methods=['GET', 'POST'])
