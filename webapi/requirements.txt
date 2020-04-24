@@ -1,2 +1,5 @@
+sqlite3
 flask
+flask_cors
 pylint
+datetime
