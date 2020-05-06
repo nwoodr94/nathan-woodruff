@@ -8,8 +8,8 @@ export class Footer extends React.Component {
 
     render() {
         return (
-        <section class="footer">
-            <p>Developed by <a href="https://github.com/nwoodr94" target="_blank">Nathan Woodruff</a> ({this.year})</p>
+        <section className="footer">
+            <p>Developed by <a href="https://github.com/nwoodr94" target="_blank" rel="noopener noreferrer">Nathan Woodruff</a> ({this.year})</p>
         </section>
         )
     }

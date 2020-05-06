@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
   
-let url = 'http://localhost:5000/webapi/v1/contact/';
+let url = 'https://backend.nathanwoodruff.dev/webapi/v1/contact/';
 
 export async function callAPI(contact) {
 
@@ -10,7 +10,12 @@ export async function callAPI(contact) {
         body: JSON.stringify(contact)
     })
 
-    let status = await response.json();
+    let status = await response.status;
+    await console.log(status)
+
+    if (status === 200) {
+        window.location.reload();
+    }
 
     return status;
 }

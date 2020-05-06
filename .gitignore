@@ -58,6 +58,9 @@ typings/
 # Optional eslint cache
 .eslintcache
 
+# Pycache
+*.pyc
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/
@@ -78,6 +81,7 @@ typings/
 .env.test
 .vscode
 *cfg
+.elasticbeanstalk
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache

@@ -16,21 +16,12 @@ const aboutJSX = (
         Physics in 2017.
         <br />
         <br />
-        In the summer of 2019 I completed a full-stack software development bootcamp, and due to my interest in building web applications, I started work as a software developer on a React team in Los Angeles.
+        In the summer of 2019 I completed a full-stack software development bootcamp, and due to my interest in building web applications, I started work as a software developer on a team in Los Angeles.
       </p>
       <br />
-<<<<<<< HEAD
-    </div>
-);
-
-const machineJSX = (
-    <div>
-      <h2>Software Development</h2>
-=======
       <h2>Machine Preferences</h2>
->>>>>>> parent of 826ca6c... form submission works
       <p>
-        I'm developing in Crostini on a Pixelbook Go, with the i5/8/128 gig configuration. I like the Chrome OS
+        I'm developing on a Pixelbook Go, with the i5/8/128 gig configuration. I like the Chrome OS
         philosophy, and when it's time to code, I fire up the terminal and work directly in the provisioned Debian
         container. Linux is a lot of fun and the support is great.
         <br />
