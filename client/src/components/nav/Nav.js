@@ -15,7 +15,7 @@ export class Nav extends React.Component {
                 <li><Link to="Contact" className="link">Contact</Link></li>
                 </ul>
 
-                <Switch>
+                <Switch className="component">
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/about" component={About}></Route>
                     <Route path="/contact" component={FormContainer}></Route>

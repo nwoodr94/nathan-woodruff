@@ -8,6 +8,7 @@ form > * {
 
 button {
     width: 15%;
+    min-width: 75px;
 }
 
 input:-webkit-autofill,
