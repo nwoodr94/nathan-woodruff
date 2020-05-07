@@ -9,13 +9,15 @@ export class Nav extends React.Component {
     render() {
         return (
             <Router>
-                <ul>
-                <li><Link to="/" className="link">Home</Link></li>
-                <li><Link to="About" className="link">About</Link></li>
-                <li><Link to="Contact" className="link">Contact</Link></li>
-                </ul>
+                
+                    <ul className="nav">
+                    <li><Link to="/" className="link">Home</Link></li>
+                    <li><Link to="About" className="link">About</Link></li>
+                    <li><Link to="Contact" className="link">Contact</Link></li>
+                    </ul>
+                
 
-                <Switch className="component">
+                <Switch className="nav">
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/about" component={About}></Route>
                     <Route path="/contact" component={FormContainer}></Route>

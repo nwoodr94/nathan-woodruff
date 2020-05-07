@@ -1,16 +1,13 @@
-
-
 ul {
   list-style-type: none;
-  padding: 2vh;
   display: block;
-  text-align: left;
   position: fixed;
+  height: 100vh;
 }
 
 li {
-  padding: 1rem;
   animation: animation 500ms linear both;
+  padding: 1rem;
 }
 
 @keyframes animation {
