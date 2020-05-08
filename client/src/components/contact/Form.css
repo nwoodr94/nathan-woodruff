@@ -11,7 +11,7 @@ button {
     min-width: 75px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
     color: black;
   }
 
@@ -19,8 +19,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px #F0FFFF inset !important;
-    box-shadow: 0 0 0 30px #F0FFFF inset !important;
+    -webkit-box-shadow: 0 0 0 30px #F8F8FF inset !important;
+    box-shadow: 0 0 0 30px #F8F8FF inset !important;
 }
 
 input:-webkit-autofill {
