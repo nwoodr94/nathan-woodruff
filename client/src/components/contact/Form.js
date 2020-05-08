@@ -53,7 +53,7 @@ export class Form extends React.Component {
         return (
         <section className="text">
             <h2>Contact</h2>
-            <p>Tell me what I can do for your organization.</p>
+            <p>Ask me a question, add me to your team, or just say hello.</p>
             <br /> 
             <form onSubmit={this.handleSubmit}>
                 <input type="text" name="name" placeholder="Name" maxLength="100" autoComplete="off" onChange={this.handleChange} />

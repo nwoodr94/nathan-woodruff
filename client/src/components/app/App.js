@@ -1,5 +1,7 @@
 import React from 'react';
-import {Nav} from '../nav/Nav';
+import {Component} from '../router/Router';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
 import {Footer} from '../footer/Footer';
 
 import './App.css';
@@ -13,7 +15,7 @@ export class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Nav />
+        <Component />
         <Footer />
       </div>
     );

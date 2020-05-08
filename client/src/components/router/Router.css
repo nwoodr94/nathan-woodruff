@@ -1,0 +1,41 @@
+ul {
+  list-style-type: none;
+  display: block;
+  position: sticky;
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+  background-color: #778899;
+}
+
+li {
+  animation: animation 500ms linear both;
+  padding: 0.5rem;
+  background-color: inherit;
+}
+
+a {
+  background-color: inherit;
+}
+
+
+
+@media only screen and (max-width: 875px) {
+  ul {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    font-size: 0.75rem;
+    background-color: #778899;
+    width: 100vw;
+    max-height: 10vh;
+    padding: 0;
+  }
+  
+  li {
+    padding: 0.5rem;
+    animation: animation 500ms linear both;
+    background-color: inherit;
+  }
+  
+}
