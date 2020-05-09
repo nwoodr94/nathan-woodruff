@@ -5,9 +5,9 @@
     width: 100%;
     font-size: 0.7rem;
     font-family: 'Roboto', sans-serif;
-    animation: animation 500ms linear both;
-  }
-
-  @media only screen and (max-width: 875px) {
     
   }
+
+.footer > * {
+  animation: animation 500ms linear both;
+}

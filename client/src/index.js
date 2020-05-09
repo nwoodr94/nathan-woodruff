@@ -4,7 +4,6 @@ import './index.css';
 import App from './components/app/App';
 import * as serviceWorker from './serviceWorker';
 import DocumentMeta from 'react-document-meta';
-import ReactGA from 'react-ga';
 
 const meta = {
   title: "Nathan Woodruff - Developer",
@@ -16,19 +15,23 @@ const meta = {
   }
 };
 
-function initializeReactGA() {
-  ReactGA.initialize('UA-154613054-2');
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}
+// async function initializeReactGA() {
+//   await ReactGA.initialize('UA-154613054-2');
+//   await ReactGA.pageview(window.location.pathname + window.location.search);
+// }
 
 ReactDOM.render(
   <React.StrictMode>
-    {initializeReactGA()}
     <DocumentMeta {...meta}/>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// initializeReactGA();
+
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
