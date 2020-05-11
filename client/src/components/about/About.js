@@ -30,12 +30,6 @@ const aboutJSX = (
         <br />
         I write clean code for my company.
       </p>
-      <h2>Machine Preferences</h2>
-      <p>
-        I'm developing on a Pixelbook Go, with the i5/8/128G configuration. I like the abstract-everything
-        philosophy of Chrome OS, but when it's time to code, I fire up the terminal and work directly in the provisioned Debian Linux
-        container.
-      </p>
       <h2>My Website</h2>
       <p>
         This website is developed in React, and hosted on AWS. All requests to this domain are handled by Route 53, and passed through CloudFront before landing in an S3 bucket.
@@ -48,6 +42,12 @@ const aboutJSX = (
         <br />
         <br />
         I collect form submissions from this site by securely posting a credential to the endpoint with cURL, in effect calling a function that returns my contacts.
+      </p>
+      <h2>Machine Preferences</h2>
+      <p>
+        I'm developing on a Pixelbook Go, with the i5/8/128G configuration. I like the abstract-everything
+        philosophy of Chrome OS, but when it's time to code, I fire up the terminal and work directly in the provisioned Debian Linux
+        container.
       </p>
       <h2>Lifestyle</h2>
       <p>

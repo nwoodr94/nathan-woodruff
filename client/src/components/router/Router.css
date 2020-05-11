@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.link:hover {
   color: #F8F8FF;
 }
 
