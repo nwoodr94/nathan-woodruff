@@ -8,7 +8,7 @@ export class About extends React.Component {
 }
 
 const aboutJSX = (
-    <section class="text">
+    <section className="text">
     <h2>About Me</h2>
       <p>
         I'm native to the Pacific Northwest, and I graduated from the University of Washington with a B.S. in Applied
@@ -64,7 +64,7 @@ const aboutJSX = (
         <br />
         I first learned to code by programming a C script that collected data from sensors on its payload.
       </p>
-      <div class="img-container">
+      <div className="img-container">
         <img src={require("../../assets/space-daemon.png")} alt="nathan's rocket"/>
       </div>
 

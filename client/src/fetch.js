@@ -11,7 +11,6 @@ export async function callAPI(contact) {
     })
 
     let status = await response.status;
-    await console.log(status)
 
     if (status === 200) {
         window.location.reload();

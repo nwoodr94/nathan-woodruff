@@ -3,7 +3,7 @@ import {Form} from './Form';
 import {callAPI} from '../../fetch';
 
 
-export class FormContainer extends React.Component {
+export class ContactContainer extends React.Component {
 
     constructor(props) {
         super(props);

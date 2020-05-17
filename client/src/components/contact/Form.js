@@ -1,6 +1,6 @@
 import React from 'react';
 import './Form.css';
-import Contact from './Model';
+import Contact from './ContactModel';
 
 export class Form extends React.Component {
 
@@ -25,25 +25,29 @@ export class Form extends React.Component {
         });
     }
 
+    validateForm(contact) {
+        let valid = true;
+
+        Object.entries(contact).forEach(entry => {
+            if (!entry[1] || entry[1].replace(/\s+/g, '').length === 0) {
+                valid = false;
+            }
+        });
+
+        return valid;
+    }
+
     handleSubmit() {
         let contact = new Contact();
-        let invalid;
 
         contact.name = this.state.name;
         contact.company = this.state.company;
         contact.email = this.state.email;
         contact.message = this.state.message;
 
-        Object.entries(contact).forEach(entry => {
-            if (!entry[1] || entry[1].replace(/\s+/g, '').length === 0) {
-                invalid = true
-            }
-            return invalid
-        });
+        let valid = this.validateForm(contact);
     
-        console.log(`${JSON.stringify(contact)}`)
-        
-        if (!invalid){
+        if (valid){
             this.props.onSubmit(contact);
         }
     }
