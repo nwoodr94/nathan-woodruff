@@ -7,7 +7,7 @@ import DocumentMeta from 'react-document-meta';
 
 const meta = {
   title: "Nathan Woodruff - Developer",
-  description: "I'm a full stack software developer in React/Node and Python with AWS",
+  description: "I'm a software developer with a focus on full-stack systems integration.",
   meta: {
     name: {
       keywords: 'nathan, woodruff, software, developer'
