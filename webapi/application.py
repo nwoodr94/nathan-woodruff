@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 # SQL Dependencies
 from datetime import datetime
-from data.scripts import Insert, Query
+from .data.scripts import Insert, Query
 
 # Secrets
 import os
@@ -17,17 +17,14 @@ key = os.getenv('SECRET_KEY')
 application = flask.Flask(__name__)
 cors = CORS(application, resources={r"/webapi/*": {"origins": "*"}})
 
-now = datetime.now() # current date and time
-
 class Contact:
-
-    time = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
 
     def __init__(self, name, company, email, message):
         self.name = name
         self.company = company
         self.email = email
         self.message = message
+        self.time = time = datetime.now().strftime("%m/%d/%Y %H:%M:%S")
 
 @application.route('/webapi/v1/contact/', methods=['POST'])
 def post():
