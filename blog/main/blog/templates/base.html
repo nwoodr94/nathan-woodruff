@@ -1,0 +1,25 @@
+<html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog/style.css' %}" type="text/css" />
+
+{% block header %}
+<h1><a href="{% url 'blogs:index' %}">Nathan Woodruff</a></h1>
+{% endblock %}
+
+<section class="text">
+{% block content %}
+{% endblock %}
+</section>
+
+{% block footer %}
+<section class="footer">
+    <p>
+        Developed by 
+            <a href="https://github.com/nwoodr94" target="_blank" rel="noopener noreferrer">
+            Nathan Woodruff
+            </a> 
+            <span role="img" aria-label="us flag"></span>
+    </p>
+</section>
+{% endblock %}
+</html>

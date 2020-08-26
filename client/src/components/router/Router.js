@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Link, Switch, Route, Redirect} from 'react-router-dom';
 import {Home} from "../home/Home";
 import {About} from "../about/About";
 import {FormContainer} from "../contact/FormContainer";
 
 
 import './Router.css';
+
+let blogURL = process.env.REACT_APP_BLOG_URL;
 
 export class Component extends React.Component {
     render() {
@@ -15,11 +17,13 @@ export class Component extends React.Component {
                     <li><Link to="/" className="link">Home</Link></li>
                     <li><Link to="/about" className="link">About</Link></li>
                     <li><Link to="/contact" className="link">Contact</Link></li>
+                    <li><a href={blogURL} target="_blank" rel="noopener noreferrer" className="link">Blog</a></li>
                 </ul>
                 <Switch className="component">
                     <Route exact path="/" component={Home}></Route>
                     <Route path="/about" component={About}></Route>
                     <Route path="/contact" component={FormContainer}></Route>
+                    <Redirect to="/"></Redirect>
                 </Switch>
             </Router>
         )

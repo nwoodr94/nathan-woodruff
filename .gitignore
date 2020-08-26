@@ -39,6 +39,7 @@ build/Release
 
 # Database
 database
+*.sqlite3
 
 # Dependency directories
 node_modules/

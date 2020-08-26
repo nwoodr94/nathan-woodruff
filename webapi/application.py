@@ -5,7 +5,7 @@ from flask_cors import CORS
 
 # SQL Dependencies
 from datetime import datetime
-from .data.scripts import Insert, Query
+from data.scripts import Insert, Query
 
 # Secrets
 import os

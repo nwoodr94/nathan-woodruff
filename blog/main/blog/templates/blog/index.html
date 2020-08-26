@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p class="welcome">
+        Welcome to my blog, a place where I post things.
+    </p>
+    <br />
+    <br />
+
+    {%for blog in blogs%}
+        <li><a href="{% url 'blogs:blog_post' slug=blog.slug %}">{{blog.title}}</a></li>
+    {%endfor%}
+
+{% endblock %}

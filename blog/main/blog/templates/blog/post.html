@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="details">
+<p>{{post.title}}</p>
+<p>{{post.author}}</p>
+<p>{{post.date}}</p>
+</section>
+<br />
+<section class="post">
+{{post.content|safe}}
+</section>
+{% endblock %}
