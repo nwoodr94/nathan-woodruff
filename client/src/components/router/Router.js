@@ -17,7 +17,6 @@ export class Component extends React.Component {
                     <li><Link to="/" className="link">Home</Link></li>
                     <li><Link to="/about" className="link">About</Link></li>
                     <li><Link to="/contact" className="link">Contact</Link></li>
-                    <li><a href={blogURL} target="_blank" rel="noopener noreferrer" className="link">Blog</a></li>
                 </ul>
                 <Switch className="component">
                     <Route exact path="/" component={Home}></Route>

@@ -9,9 +9,9 @@ export class Home extends React.Component {
                     <h2>I'm Nathan</h2>
                     <br />
                     <p>
-                        I'm a software developer based in Los Angeles <span role="img" aria-label="palm tree">{String.fromCodePoint(0x1F334)}</span>
+                        I'm a software developer based in Idaho Falls<span role="img" aria-label="palm tree">{String.fromCodePoint(0x1F332)}</span>
                         <br />
-                        Welcome to my website!
+                        Welcome to my website.
                     </p>
                 </div>
             </section>
