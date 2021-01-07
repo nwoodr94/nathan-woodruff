@@ -57,19 +57,24 @@ export class Form extends React.Component {
         return (
         <section className="text">
             <h2>Contact</h2>
-            <p>Ask me a question, add me to your team, or just say hello.</p>
+            <p>
+                Ask me a question, or just say hello.
+                <br />
+                <br />
+                I have temporarily disabled this form, because I don't want to pay for it. <br /> Please consider adding me on <a href="https://www.linkedin.com/in/nwoodr94/"><b>LinkedIn</b></a> or following my work on <a href="https://github.com/nwoodr94"><b>GitHub</b></a>.
+            </p>
             <br /> 
-            <form onSubmit={this.handleSubmit}>
-                <input type="text" name="name" placeholder="Name" maxLength="100" autoComplete="off" onChange={this.handleChange} />
-                <input type="text" name="company" placeholder="Company" maxLength="100" autoComplete="off" onChange={this.handleChange} />
-                <input type="email" name="email" placeholder="Email Address" maxLength="100" autoComplete="off" onChange={this.handleChange} />
-                <textarea rows="12" name="message" placeholder="Message" maxLength="500" autoComplete="off" onChange={this.handleChange} ></textarea>
+            <form onSubmit={this.handleSubmit} style={{opacity: '45%'}}>
+                <input type="text" name="name" placeholder="Name" maxLength="100" autoComplete="off" onChange={this.handleChange} disabled/>
+                <input type="text" name="company" placeholder="Company" maxLength="100" autoComplete="off" onChange={this.handleChange} disabled/>
+                <input type="email" name="email" placeholder="Email Address" maxLength="100" autoComplete="off" onChange={this.handleChange} disabled/>
+                <textarea rows="12" name="message" placeholder="Message" maxLength="500" autoComplete="off" onChange={this.handleChange} disabled></textarea>
             </form>
             <p style={{"fontSize": "small"}}>
                 {(this.state.message.length > 0) && `${this.state.message.length}/500`}
                 <br />
                 <br />
-                <button type="submit" onClick={this.handleSubmit}>Submit</button>
+                <button type="submit" onClick={this.handleSubmit} disabled style={{opacity: '45%'}}>Submit</button>
             </p>
         </section>
         );

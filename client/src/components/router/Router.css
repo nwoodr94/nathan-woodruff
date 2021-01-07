@@ -7,7 +7,7 @@ ul {
   padding: 0;
   width: 100vw;
   height: 10vh;
-  background-color: #778899;
+  background-color: black;
 }
 
 li {
@@ -20,6 +20,10 @@ li {
 a {
   background-color: inherit;
   text-decoration: none;
+}
+
+.link {
+  color: white;
 }
 
 .link:hover {

@@ -1,10 +1,14 @@
 * {
   background-color: #F8F8FF;
+}
+
+a {
   color: black;
 }
 
 .text {
   width: 85%;
+  color: black;
   max-width: 36em;
   margin: 0 auto;
   display: flex;
