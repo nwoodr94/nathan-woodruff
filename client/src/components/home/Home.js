@@ -1,9 +1,9 @@
-import React from 'react';
-import './Home.css';
+import React from 'react'
+import './Home.css'
 
 export class Home extends React.Component {
-    render() {
-        return (
+  render () {
+    return (
             <section className="text">
                 <div className="welcome">
                     <h2>I'm Nathan</h2>
@@ -15,6 +15,6 @@ export class Home extends React.Component {
                     </p>
                 </div>
             </section>
-        );
-    }
+    )
+  }
 }

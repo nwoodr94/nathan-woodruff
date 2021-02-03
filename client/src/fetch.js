@@ -1,20 +1,19 @@
-const fetch = require('node-fetch');
-  
-let url = 'https://backend.nathanwoodruff.dev/webapi/v1/contact/';
+const fetch = require('node-fetch')
 
-export async function callAPI(contact) {
+const url = 'https://backend.nathanwoodruff.dev/webapi/v1/contact/'
 
-    let response = await fetch(url, {
-        method: 'POST',
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(contact)
-    })
+export async function callAPI (contact) {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(contact)
+  })
 
-    let status = await response.status;
+  const status = await response.status
 
-    if (status === 200) {
-        window.location.reload();
-    }
+  if (status === 200) {
+    window.location.reload()
+  }
 
-    return status;
+  return status
 }

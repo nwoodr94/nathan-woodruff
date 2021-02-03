@@ -1,17 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router, Link, Switch, Route, Redirect} from 'react-router-dom';
-import {Home} from "../home/Home";
-import {About} from "../about/About";
-import {FormContainer} from "../contact/FormContainer";
+import React from 'react'
+import { BrowserRouter as Router, Link, Switch, Route, Redirect } from 'react-router-dom'
+import { Home } from '../home/Home'
+import { About } from '../about/About'
+import { FormContainer } from '../contact/FormContainer'
 
+import './Router.css'
 
-import './Router.css';
-
-let blogURL = process.env.REACT_APP_BLOG_URL;
+const blogURL = process.env.REACT_APP_BLOG_URL
 
 export class Component extends React.Component {
-    render() {
-        return (
+  render () {
+    return (
             <Router>
                 <ul>
                     <li><Link to="/" className="link">Home</Link></li>
@@ -25,6 +24,6 @@ export class Component extends React.Component {
                     <Redirect to="/"></Redirect>
                 </Switch>
             </Router>
-        )
-    }
+    )
+  }
 }

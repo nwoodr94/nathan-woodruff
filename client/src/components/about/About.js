@@ -1,10 +1,10 @@
-import React from 'react';
-import "./About.css";
+import React from 'react'
+import './About.css'
 
 export class About extends React.Component {
-    render() {
-        return aboutJSX;
-    }
+  render () {
+    return aboutJSX
+  }
 }
 
 const aboutJSX = (
@@ -28,7 +28,7 @@ const aboutJSX = (
         I first learned to code by programming a C script that collected data from sensors on its payload.
       </p>
       <div className="img-container">
-        <img src={require("../../assets/space-daemon.png")} alt="nathan's rocket"/>
+        <img src={require('../../assets/space-daemon.png')} alt="nathan's rocket"/>
       </div>
 
   </section>

@@ -1,24 +1,22 @@
-import React from 'react';
-import {Form} from './Form';
-import {callAPI} from '../../fetch';
-
+import React from 'react'
+import { Form } from './Form'
+import { callAPI } from '../../fetch'
 
 export class FormContainer extends React.Component {
+  constructor (props) {
+    super(props)
+  }
 
-    constructor(props) {
-        super(props);
-    }
+  onSubmit (contact) {
+    (async () => {
+      const response = await callAPI(contact)
+      await console.log(`API responded with ${response}`)
+    })()
+  }
 
-   onSubmit(contact) {
-       (async() => {
-        let response = await callAPI(contact);
-        await console.log(`API responded with ${response}`);
-       })();
-    }
-
-    render() {
-        return (
+  render () {
+    return (
             <Form onSubmit={this.onSubmit}/>
-        )
-    }
+    )
+  }
 }
