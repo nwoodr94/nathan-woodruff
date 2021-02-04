@@ -6,8 +6,6 @@ import { FormContainer } from '../contact/FormContainer'
 
 import './Router.css'
 
-const blogURL = process.env.REACT_APP_BLOG_URL
-
 export class Component extends React.Component {
   render () {
     return (

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Form.css'
 import Contact from './ContactModel'
+import PropTypes from 'prop-types'
 
 export class Form extends React.Component {
   constructor (props) {
@@ -77,4 +78,8 @@ export class Form extends React.Component {
         </section>
     )
   }
+}
+
+Form.propTypes = {
+  onSubmit: PropTypes.func
 }
