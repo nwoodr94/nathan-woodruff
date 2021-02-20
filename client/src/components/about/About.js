@@ -15,7 +15,7 @@ const aboutJSX = (
         Physics in 2017.
         <br />
         <br />
-        I'm a software developer at the Idaho National Laboratory, a key player in the United States advanced research laboratory ecosystem.
+        I'm a software developer at the Idaho National Laboratory, a United States advanced research facility.
         <br />
         <br />
         You can check out our open source projects on <a href="https://github.com/idaholab"><b>GitHub</b></a>.
