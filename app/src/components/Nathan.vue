@@ -81,7 +81,7 @@ export default {
   display: flex;
   flex-direction: column;
 
-  height: 80vh;
+  min-height: 80vh;
   max-height: 500px;
 
   position: absolute;
