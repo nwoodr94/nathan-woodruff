@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar color="primary" app>
-      <h2>Nathan Woodruff</h2>
+      <h1 style="font-size: 1.25rem">Nathan Woodruff</h1>
 
       <v-spacer></v-spacer>
 

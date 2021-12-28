@@ -11,8 +11,8 @@
     "deploy": "npm run build && npm run cloud && npm run cache"
   },
   "dependencies": {
-    "Math": "0.0.1-security",
     "core-js": "^3.6.5",
+    "Math": "0.0.1-security",
     "vue": "^2.6.11",
     "vue-router": "^3.5.2",
     "vuetify": "^2.4.0",
