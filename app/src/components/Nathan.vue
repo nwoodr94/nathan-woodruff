@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row>
       <v-col class="d-flex justify-center">
-        <v-card class="card">
+        <v-card class="card" flat max-width="750px">
           <v-card-title
             class="d-flex justify-center"
             style="padding: 1rem 0 0 0"

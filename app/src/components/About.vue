@@ -37,6 +37,10 @@ export default {
 </script>
 
 <style scoped>
+.v-image {
+  max-width: 500px;
+  margin: 0 auto;
+}
 a {
   color: inherit !important;
 }
